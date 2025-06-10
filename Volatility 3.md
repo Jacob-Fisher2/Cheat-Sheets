@@ -13,6 +13,9 @@ Includes x32/x64 determination, major and minor OS versions, and kdbg informatio
 
 ```vol.py -f “/path/to/file” windows.pstree```
 
+```vol.py -r csv -f “/path/to/file” windows.pstree > pstree.csv```
+
+Saves the output in CSV format so we can analyze it in Excel
 
 
 ### Procdump
