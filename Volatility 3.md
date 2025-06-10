@@ -2,6 +2,7 @@
 
 ## OS Info
 ```vol.py -f “/path/to/file” windows.info```
+
 Includes x32/x64 determination, major and minor OS versions, and kdbg information
 
 ## Process Information
@@ -13,6 +14,7 @@ Includes x32/x64 determination, major and minor OS versions, and kdbg informatio
 
 ### Procdump
 ```vol.py -f “/path/to/file” -o “/path/to/dir” windows.dumpfiles ‑‑pid <PID>```
+
 Dumps exe and associated DLLs
 
 
@@ -21,14 +23,17 @@ Dumps exe and associated DLLs
 
 ### Handles
 ```vol.py -f “/path/to/file” windows.handles ‑‑pid <PID>```
+
 PID, process, offset, handlevalue, type, grantedaccess, name
 
 ### Dlls
 ```vol.py -f “/path/to/file” windows.dlllist ‑‑pid <PID>```
+
 PID, process, base, size, name, path, loadtime, file output
 
 ### cmdline
 ```vol.py -f “/path/to/file” windows.cmdline```
+
 PID, process name, args
 
 ## Network Information
@@ -57,6 +62,7 @@ PID, process name, args
 ## Miscellaneous
 ### Malfind
 ```vol.py -f “/path/to/file” windows.malfind```
+
 PID, process name, process start, protection, commit charge, privatememory, file output, hexdump disassembly
 
 ### Yarascan
